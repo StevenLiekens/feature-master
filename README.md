@@ -121,7 +121,8 @@ public class HomeController : Controller
 
 #### Smart Toggles
 
-1. Configure smart toggles with `ConfigureFeatureToggleRouter<TFeature, TToggleContext>()`
+1. Configure feature toggles with `ConfigureFeatureToggles<TFeature>()`
+1. Configure smart toggling decisions with `ConfigureFeatureToggleRouter<TFeature, TToggleContext>()`
 2. Inject `IFeatureToggles` and call `GetFeatureToggles(toggleContext)`
 
 Notes
