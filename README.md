@@ -1,8 +1,7 @@
 # Feature Master
 This library can be used to implement feature toggles in an application that uses the (ASP).NET Core hosting model.
 
-![Nuget](https://img.shields.io/nuget/v/FeatureMaster.svg?style=flat-square)
-
+[![Nuget](https://img.shields.io/nuget/v/FeatureMaster.svg?style=flat-square)](https://www.nuget.org/packages/FeatureMaster/)
 
 ## How to Use
 
