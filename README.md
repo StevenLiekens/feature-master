@@ -52,9 +52,9 @@ public void ConfigureServices(IServiceCollection services)
 
 ### Configure Smart Toggles
 
-Sometimes configuration is not enough and you need to enable or disable a feature based on application context.
+Sometimes static configuration is not enough and you need to toggle a feature based on application context.
 
-In this example I bind my feature toggles from appsettings. Then I inspect an HttpContext and enable my new feature if the user is a beta tester, overriding the value from my appsettings.
+In this example I inspect an HttpContext and enable my new feature if the user is a beta tester, overriding the value from my appsettings.
 
 ```csharp
 public IConfiguration Configuration { get; }
