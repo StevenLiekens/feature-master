@@ -25,7 +25,7 @@ public class MyNewFeature : Feature
 
 Here I only added one toggle, but you can have multiple toggles per feature. It's your choice.
 
-### Configure Default Toggles
+### Configure Static Toggles
 
 Use the `ConfigureFeatureToggles` helper method to register a feature and configure it.
 
@@ -115,16 +115,16 @@ public class HomeController : Controller
 
 ### Summary
 
-#### Simple Toggles
+#### Static Toggles
 
-1. Configure feature toggles with `ConfigureFeatureToggles<TFeature>()`
-2. Inject `IFeatureToggles` and call `GetFeatureToggles()`
+1. Configure toggles with `ConfigureFeatureToggles<TFeature>()`
+2. Inject `IFeatureToggles<TFeature>` and call `GetFeatureToggles()`
 
 #### Smart Toggles
 
-1. Configure feature toggles with `ConfigureFeatureToggles<TFeature>()`
-1. Configure smart toggling decisions with `ConfigureFeatureToggleRouter<TFeature, TToggleContext>()`
-2. Inject `IFeatureToggles` and call `GetFeatureToggles(toggleContext)`
+1. Configure toggles with `ConfigureFeatureToggles<TFeature>()`
+1. Add smart toggling decisions with `ConfigureFeatureToggleRouter<TFeature, TToggleContext>()`
+2. Inject `IFeatureToggles<TFeature>` and call `GetFeatureToggles(toggleContext)`
 
 Notes
 
